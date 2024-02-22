@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #544646;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #f00;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #a200ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

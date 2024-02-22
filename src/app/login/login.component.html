@@ -1,1 +1,36 @@
 <h1>Hello I am Login </h1>
+<p>Username {{ hi }}</p>
+<p>Password {{ password }}</p>
+
+<!--Intopalation-->
+<img alt="audi logo" src="{{image}}" width="{{width}}">
+<br>
+<!--Property Binding-->
+<img [src]="image" alt="audi logo" width="{{width}}">
+
+<br>
+
+<!--event binding-->
+<input #username
+       (keyup)="setData(username.value)"
+       placeholder="rype here"
+       type="text">
+<button (click)="onClick()">Click me</button>
+
+<br>
+
+<input #realtime
+       (keyup)="name=realtime.value"
+       placeholder="real time"
+       type="text">
+<h2>my name is {{ name }}</h2>
+
+<br>
+
+<!--Two way binding-->
+<input [(ngModel)]="name"
+       placeholder="Two way binding"
+       type="text">
+<h2>my name is {{ name }}</h2>
+
+<br>

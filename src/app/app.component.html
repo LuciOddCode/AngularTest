@@ -1,1 +1,11 @@
-<app-login></app-login>
+<header>
+  <button routerLink="/home" routerLinkActive="active">Home</button>
+  |
+  <button routerLink="/login/{{value}}" routerLinkActive="active">Login</button>
+  |
+  <button routerLink="/contact" routerLinkActive="active">Contact us</button>
+  |
+  <input [(ngModel)]="value" placeholder="type here..." style="padding: 8px" type="text">
+</header>
+<hr>
+<router-outlet></router-outlet>
